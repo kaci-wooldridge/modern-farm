@@ -6,11 +6,8 @@ const yearlyPlan = createPlan()
 
 import { plantSeeds } from './tractor.js'
 const seedsToPlant = plantSeeds(yearlyPlan)
-console.log(seedsToPlant)
-
-
-
+// console.log(seedsToPlant)
 
 import { harvestPlants } from './harvester.js'
-// const harvesterArray = harvestPlants(newArray)
-// console.log(harvesterArray)
+const harvesterArray = harvestPlants(seedsToPlant)
+console.log(harvesterArray)
