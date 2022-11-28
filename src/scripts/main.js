@@ -11,3 +11,11 @@ const seedsToPlant = plantSeeds(yearlyPlan)
 import { harvestPlants } from './harvester.js'
 const harvesterArray = harvestPlants(seedsToPlant)
 console.log(harvesterArray)
+
+import { catalogFunction } from './catalog.js'
+console.log(catalogFunction(harvesterArray))
+
+const parentHTMLElement = document.querySelector(".container")
+parentHTMLElement.innerHTML = catalogFunction(harvesterArray)
+
+console.log(harvesterArray)

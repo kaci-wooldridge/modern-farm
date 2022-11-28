@@ -13,4 +13,3 @@ export const harvestPlants = (plantsArray) =>{
     }
     return newArray
 }
-
